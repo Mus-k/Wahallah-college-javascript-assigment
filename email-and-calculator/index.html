@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript practice</title>
+  </head>
+  <style>
+    .mail {
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 400px;
+      background: #32c6ef;
+      border: 1px soild rgb(164, 142, 142);
+    }
+    .mail h2 {
+      text-align: center;
+    }
+
+    input:focus {
+      background-color: rgb(244, 224, 189);
+    }
+    input[type="text"] {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      outline: none;
+      border: none;
+      border-radius: 8px;
+      height: 30px;
+    }
+    input[type="submit"] {
+      font-size: 12pt;
+      width: 90px;
+      margin: 0 auto;
+      border: none;
+      border-radius: 8px;
+      height: 30px;
+      transition: all 0.5s ease-in-out;
+    }
+    input[type="submit"]:hover {
+      transform: scale(1.05);
+      background: #dddd;
+      color: white;
+    }
+    .form1 {
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .title {
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <h1 class="title">1. Password Validator</h1>
+    <div class="mail">
+      <h2>Input an email and Submit</h2>
+      <form class="form1" name="form1" action="#">
+        <input
+          type="text"
+          name="email"
+          placeholder="enter your email"
+          class="email"
+        />
+
+        <input type="submit" name="submit" value="Submit" class="submit" />
+      </form>
+    </div>
+<h2 class="title">2. Calculator</h2>
+  
+<input type="text" class="num1" name="num1" placeholder="enter number"/>
+<label>enter operator + - / *</label>
+<input type="text" class="operator" placeholder="choose oprator"/>
+<input type="text" class="num2" name="num2" placeholder="enter number"/>
+<button class="checkAnswer">chech the answer</button>
+
+ 
+
+    <script src="./app.js"></script>
+  </body>
+</html>

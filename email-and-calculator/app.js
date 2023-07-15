@@ -1,6 +1,8 @@
 const email = document.querySelector(".email");
 const form1 = document.querySelector(".form1");
 
+
+// validating email function
 function validateEmail(email) {
   const emailValue = email.toLowerCase().trim();
   const emailCheck =
@@ -11,19 +13,21 @@ function validateEmail(email) {
     console.log("Password didn't match. Password validation unsuccessful");
   }
 }
+
+// event listener on the form
 form1.addEventListener("submit", (e) => {
   e.preventDefault();
   validateEmail(form1.email.value);
   form1.email.value = "";
 });
 
-// calculator
+// question 2 calculator
 
 const num1 = document.querySelector(".num1");
 const num2 = document.querySelector(".num2");
 const checkAnswer = document.querySelector(".checkAnswer");
-
-let result = 0;
+const calResult = document.querySelector(".calResult");
+let result = null;
 
 // switch case check
 function calcutoFunc(operator, num1, num2) {
@@ -35,7 +39,7 @@ function calcutoFunc(operator, num1, num2) {
     alert("empty inputs are not allowed");
   } else if (operator.value.length > 1) {
     alert("choose only one operator");
-  }  else {
+  } else {
     switch (operator.value) {
       case "+":
         result = Number(num1.value) + Number(num2.value);
@@ -69,6 +73,8 @@ function calcutoFunc(operator, num1, num2) {
         console.log("Invalid operator");
         break;
     }
+
+    calResult.innerHTML=`<p>The result is: <span class='res'>${result}</span></p>`
   }
 }
 
@@ -80,4 +86,6 @@ checkAnswer.addEventListener("click", () => {
   operator.value = "";
   num1.value = "";
   num2.value = "";
+  
+
 });

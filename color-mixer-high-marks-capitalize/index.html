@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3,4,5</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .container button,
+    input {
+      padding: 5px;
+    }
+    button {
+      cursor: pointer;
+    }
+    .result {
+      text-align: center;
+    }
+    .mixerTitle {
+      text-align: center;
+      margin-top: 50px;
+      color: rgb(116, 93, 3);
+    }
+    .marks {
+      border: 2px solid black;
+      padding: 5px;
+    }
+    .upper,
+    .mark {
+      color: rgb(197, 145, 4);
+      font-family: sans-serif;
+    }
+    .arrays {
+      margin: 20px;
+    }
+    .highestMarks {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: rgb(229, 226, 232);
+    }
+    .capitalizeTitle,
+    .highestTitle {
+      text-align: center;
+      color: rgb(116, 93, 3);
+    }
+
+    /* 5th questions */
+    .capitalize {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: rgb(229, 226, 232);
+    }
+    .submit {
+      outline: none;
+      border: none;
+      padding: 8px;
+      border-radius: 5px;
+    }
+    .users {
+      font-size: 19px;
+      text-align: center;
+      padding: 10px 0px;
+    }
+  </style>
+  <body>
+    <h2 class="mixerTitle">3 Color mixer</h2>
+    <h3>
+      <p>
+        If color1 is "red" and color2 is "blue" or vice versa, print "purple"
+      </p>
+      <p>
+        If color1 is "red" and color2 is "yellow" or vice versa, print "orange"
+      </p>
+      <p>
+        If color1 is "blue" and `color2" is "yellow" or vice versa, print
+        "green"
+      </p>
+    </h3>
+    <div class="container">
+      <input
+        type="text"
+        name="color1"
+        class="color1"
+        id="inpuTwo"
+        placeholder="enter color1"
+      />
+      <input
+        type="text"
+        name="color2"
+        class="color2"
+        id="inpuTwo"
+        placeholder="enter color2"
+      />
+      <button class="btn">See the result</button>
+    </div>
+
+    <div class="highestMarks">
+      <h2 class="highestTitle">4. Highest Marks</h2>
+
+      <h4 class="arrays">marks =</h4>
+      <p id="result"></p>
+    </div>
+
+    <div class="capitalize">
+      <h2 class="capitalizeTitle">5. Capitalize</h2>
+      <p class="users">Capitalizing first letter names of users</p>
+      <input type="text" class="userName" placeholder="enter your name" />
+      <button class="submit">submit</button>
+
+      <p class="user"></p>
+    </div>
+
+    <script src="./color.js"></script>
+  </body>
+</html>

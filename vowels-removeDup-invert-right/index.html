@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vowels</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .vowelContainer {
+      background-color: cadetblue;
+      padding: 20px;
+    }
+    .vowelContainer input,
+    button {
+      padding: 8px 5px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      cursor: pointer;
+    }
+    .number {
+      color: aliceblue;
+      font-family: sans-serif;
+      padding: 4px;
+    }
+    .vowels {
+      padding: 6px;
+    }
+    .titleVowel {
+      padding: 6px;
+    }
+    .duplicate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-color: aqua;
+    }
+    .cart {
+      padding: 5px;
+      border: 2px solid rgb(241, 236, 236);
+    }
+    .duplicateTitle {
+      margin: 12px 0px;
+      font-size: 26px;
+    }
+    .with {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+    .nonDvalue {
+      color: rgb(5, 124, 228);
+      font-size: 22px;
+      border: 2px solid white;
+      padding: 2px 6px;
+    }
+    .without {
+      padding: 6px;
+      display: flex;
+      padding: 10px;
+      font-size: 22px;
+      gap: 5px;
+    }
+
+    .invertedRight{
+       
+        color: aquamarine;
+        padding:10px  20px;
+    }
+    .inverted{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        background-color: cornflowerblue;
+    }
+
+    .check{
+        color: cadetblue;
+        font-size: 26px;
+        color: white;
+    }
+    .checking{
+        margin-top: 20px;
+        background-color: darkcyan;
+        padding: 20px;
+    }
+    .divided{
+        margin: 4px;
+    }
+  </style>
+  <body>
+    <div class="vowelContainer">
+      <h2 class="titleVowel">5. Vowel counter</h2>
+
+      <div>
+        <input
+          type="text"
+          name="name"
+          class="username"
+          placeholder="enter your name"
+        />
+        <button class="submit btnVowel">submit</button>
+        <h4 class="vowels"></h4>
+      </div>
+    </div>
+
+    <div class="duplicate">
+      <h2 class="duplicateTitle">7. Remove Duplicates</h2>
+      <h4 class="with">
+        cart with duplicates=
+        <span class="cart"
+          >"apple","apple", "orange", "orange", "eggplant", "cucumber"</span
+        >
+      </h4>
+      <h4 class="without"></h4>
+    </div>
+
+    <div class="inverted">
+        <h2 class="invertedRight">8. Inverted right-angleW triangle pattern with asterisks</h2>
+
+     <h1>Answer is in the console</h1>
+    </div>
+<div class="checking">
+
+    <div>
+        <h2 class="check">9. Check for divisibility.</h2>
+    </div>
+    <h3>
+<span>divisible by 3= </span>
+        <span class="divisible"></span></h3>
+</div>
+   
+    <script src="./vowelCounted.js"></script>
+  </body>
+</html>

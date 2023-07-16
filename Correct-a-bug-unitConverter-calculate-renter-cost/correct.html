@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>correct a bug</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .correct {
+        font-size: 22px;
+        color: rgb(212, 211, 223);
+        text-align: center;
+        padding: 12px 10px;
+      }
+      .container1 {
+        background-color: cornflowerblue;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+        padding: 12px 10px;
+        margin: 10px;
+      }
+      .result,
+      .prev {
+        padding: 0px 5px;
+        border: 2px solid rgb(212, 211, 223);
+        color: rgb(8, 193, 239);
+      }
+      .current {
+        margin: 10px;
+        font-size: 20px;
+      }
+      .text{
+        color: #f8f7f7;
+      }
+
+      .checkTotal input {
+        padding: 5px;
+        outline: none;
+        border: none;
+        width: 160px;
+        margin-top: 10px;
+      }
+      button{
+        padding: 5px;
+        margin: 5px;
+        
+      }
+      .detail{
+        color: #f8f7f7;
+      }
+      .people{
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <h1 class="correct">10. Correct a bug</h1>
+      <h3 class="prevValue">
+        Previous values=<span class="prev">1,2,3,4,5</span>
+      </h3>
+      <p class="current"></p>
+    </div>
+    <div class="container1">
+        <h1 class="correct">11. Unit converter</h1>
+        <h3 class="prevValue">
+          celsius=25;
+        </h3>
+        <p class="fahrenheit"></p>
+      </div>
+
+      <div class="container1 checkTotal">
+        <h3 class="rental">12. Calculate rental cost</h3>
+        
+        <p class="text">Thd rental costs are:<br/>
+            Economy = Rs. 4000 /- per day.<br/>
+            Midsize = Rs. 10000 /- per day.<br/>
+            Luxury = Rs. 20000 /- per day.<br/>
+
+           </p>
+           <input type="text" name="type" class="carType" value="Economy"/>
+           <input type="text" name="type" class="days" value="2"/>
+           <button class="btn">check the cost</button>
+           <h4 class="totalcash"></h4>
+      </div>
+      <div class="container1">
+        <h1 class="correct">13. Bill splitter</h1>
+        <h3 class="prevValue">
+            The cost of each dish=<span class="prev">14,20,30,10</span>
+           
+        </h3>
+        <h3 class="people"> Number of people=<span class="detail">5</span></h3>
+       <h3>Answer in the console</h3>
+      </div>
+    <script src="./correct.js"></script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px; 
+        max-width: 400px;
+        padding: 20px;
+        background-color: cadetblue;
+    }
+    /* .result{
+        color: rgba(245, 15, 15, 0.071);
+    } */
+    .title{
+        color: #ffff;
+        text-align: center;
+    }
+.b,
+    .random{
+        font-family: sans-serif;
+        color: #ffff;
+        padding: 4px;
+    }
+    .inputs input{
+        padding: 5px;
+        margin: 5px 0px;
+        outline: none;
+        border: none;
+    }
+
+    .btns button{
+        padding: 8px;
+        margin: 5px 10px;
+        outline: none;
+        border: none;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+</style>
+<body>
+    
+<div class="container">
+    <h2 class="title">14. Calculate the final order price</h2>
+    <h4 class="result">Answer in the console</h4>
+
+</div>
+<div class="container">
+    <h2 class="title">15. Calculate the percentage of the discount</h2>
+    <h4 class="result">Answer in the console</h4>
+
+</div>
+<div class="container">
+    <h2 class="title">16. Generate a random number</h2>
+    <h4 class="result">Answer in the console</h4>
+    <h4 class="answer"></h4>
+
+</div>
+<div class="container">
+    <h2 class="title">17. Build a banking application</h2>
+
+    <div class="information">
+        <h4 class="result">customer information</h4>
+        <p class="name">name</p>
+        <p class="balance">balance</p>
+    </div>
+    <div class="inputs">
+    <input type="number" name="deposit"  id="bankdeposit" placeholder="deposit"/>
+    <input type="number" name="withdraw" class="withdraw" placeholder="withdraw"/>
+</div>
+<div class="btns">
+    <button class="dbtn">deposit</button>
+    <button class="wbtn">withdraw</button>
+</div>
+   
+   
+   
+
+</div>
+
+
+
+
+<script src="./calculate.js"></script>
+</body>
+</html>
